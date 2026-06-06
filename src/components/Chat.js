@@ -16,7 +16,7 @@ function Chat() {
     const [roomName, setRoomName] = useState("");
     const [selectedRoom, setSelectedRoom] = useState(null);
     const [newRoom, setNewRoom] = useState("");
-    const [roomType, setRoomType] = useState("shared");
+    //const [roomType, setRoomType] = useState("shared");
     const [message, setMessage] = useState("");
     const [ selectedMessage, setSelectedMessage] = useState(null);
     const [image, setImage] = useState(null);
@@ -26,6 +26,8 @@ function Chat() {
     const messagesEndRef = useRef(null);
     const [showEmoji,setShowEmoji] = useState(false);
 
+
+    /*
     const emojis = [
   "😀",
   "😂",
@@ -34,7 +36,7 @@ function Chat() {
   "🚀",
   "😎",
 ];
-
+*/
 
     const user = JSON.parse(
   localStorage.getItem("user")
